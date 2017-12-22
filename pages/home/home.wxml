@@ -55,6 +55,12 @@
             <span>营销活动</span>
           </navigator>
         </li>
+		<li>
+          <navigator url='../packet/packet' hover-class="none">
+            <image src='{{packetI}}'></image>
+            <span>语音红包</span>
+          </navigator>
+        </li>
         <li>
           <navigator url='' hover-class="none">
             <image src='{{soI}}'></image>

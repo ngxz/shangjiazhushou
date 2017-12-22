@@ -1,48 +1,50 @@
 {
-  "pages": [
-    "pages/login/login",
-    "pages/home/home",
-    "pages/logs/logs",
-    "pages/goodsList/goodsList",
-    "pages/orderList/orderList",
-    "pages/income/income",
-    "pages/index/index"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#c11a29",
-    "navigationBarTitleText": "赢店商户助手"
-  },
-  "tabBar": {
-    "selectedColor":"#c11a29",
-    "color":"#515151",
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "iconPath":"img/home_g.png",
-        "selectedIconPath":"img/home_c.png",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/orderList/orderList",
-        "iconPath": "img/order_g.png",
-        "selectedIconPath": "img/order_c.png",
-        "text": "订单"
-      },
-      {
-        "pagePath": "pages/goodsList/goodsList",
-        "iconPath": "img/goods_g.png",
-        "selectedIconPath": "img/goods_c.png",
-        "text": "商品"
-      }
-      ,
-      {
-        "pagePath": "pages/income/income",
-        "iconPath": "img/income_g.png",
-        "selectedIconPath": "img/income_c.png",
-        "text": "账单"
-      }
-    ]
-  }
+    "pages": [
+		"pages/packet/sendpacket/sendpacket",
+        "pages/packet/tixian/tixian",
+        "pages/packet/packet",
+        "pages/login/login",
+        "pages/home/home",
+        "pages/logs/logs",
+        "pages/goodsList/goodsList",
+        "pages/orderList/orderList",
+        "pages/income/income",
+        "pages/index/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#c11a29",
+        "navigationBarTitleText": "赢店商户助手"
+    },
+    "tabBar": {
+        "selectedColor": "#c11a29",
+        "color": "#515151",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "iconPath": "img/home_g.png",
+                "selectedIconPath": "img/home_c.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/orderList/orderList",
+                "iconPath": "img/order_g.png",
+                "selectedIconPath": "img/order_c.png",
+                "text": "订单"
+            },
+            {
+                "pagePath": "pages/goodsList/goodsList",
+                "iconPath": "img/goods_g.png",
+                "selectedIconPath": "img/goods_c.png",
+                "text": "商品"
+            },
+            {
+                "pagePath": "pages/income/income",
+                "iconPath": "img/income_g.png",
+                "selectedIconPath": "img/income_c.png",
+                "text": "账单"
+            }
+        ]
+    }
 }

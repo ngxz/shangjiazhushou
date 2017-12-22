@@ -14,6 +14,7 @@ Page({
     boxI:'../../img/box_i.png',
     soI:'../../img/so_i.png',
     lineI:'../../img/line_03_01.png',
+	packetI:'../../img/packet_c.png',
     date: new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate(),
     zhangdan: ''
   },

@@ -1,0 +1,27 @@
+<!--pages/packet/tixian/tixian.wxml-->
+<view class='page'>
+	<!--内容  -->
+	<view class='content'>
+		<!--余额  -->
+		<view class='yue'>
+			账户余额<text>{{userMoney}}</text>元
+		</view>
+		<!--提现金额  -->
+		<view class='tixian'>
+			<view class='tit'>提现金额</view>
+			<input type='number' value='{{money}}' placeholder='0.00'></input>
+			<text>￥</text>
+		</view>
+		<!--备注  -->
+		<view class='tips'>
+			<view>提现到微信钱包，<text bindtap='all'>全部提现</text></view>
+			
+			<view>最少提现2元，收取2%手续费</view>
+		</view>
+		<!--提现按钮  -->
+		<view class='tixianBtn'>
+			<button type='primary'>提现</button>
+			<view class='tip'>1-5个工作日到账</view>
+		</view>
+	</view>
+</view>

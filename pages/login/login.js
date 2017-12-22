@@ -16,6 +16,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+	  wx.showLoading({
+		  title: '登录中',
+	  });
     //判断是否登录
     var token = wx.getStorageSync('token');
     if (token) {

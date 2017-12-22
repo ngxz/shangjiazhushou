@@ -1,0 +1,15 @@
+<!--pages/packet/sendpacket/sendpacket.wxml-->
+<text>pages/packet/sendpacket/sendpacket.wxml</text>
+<view class='page'>
+	<!-- 主体模块 -->
+	<view class='content'>
+		<!-- 头像 -->
+		<view class='iconBox'>
+			<view class='icon'><image src=''></image></view>
+		</view>
+		<!--发红包  -->
+		<view>
+			
+		</view>
+	</view>
+</view>

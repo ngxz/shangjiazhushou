@@ -1,0 +1,121 @@
+<!--pages/packet/packet.wxml-->
+<view class="page">
+  <view class="page__bd">
+	<view class='content'>
+		<!--上部分红色bg  -->
+		<view class='top'>
+			<!--头像  -->
+			<view class='iconBox'>
+				<view class='icon'><image src='../../img/logo.png'></image></view>
+				<view class='iconName'>重庆润企科技</view>
+			</view>
+			<!--问题  -->
+			<view class='quest'>
+				<view class='tit'>小程序开发哪家强？</view>
+				<view class='tips'>答案三个字</view>
+			</view>
+			<!--图片  -->
+			<view class='ads'>
+				<image src='../../img/logo.png'></image>
+			</view>
+			<!--输入按钮  -->
+			<view class='inputBtn'>
+				<button>输入答案领取赏金</button>
+			</view>
+			<!--分享提现  -->
+			<view class='share'>
+				<ul>
+					<li>
+						<navigator url='../packet/tixian/tixian'>
+							<image src='../../img/tixian_w.png'></image>
+							<text>去提现</text>
+						</navigator>
+					</li>
+					<li>
+						<navigator url=''>
+							<image src='../../img/yuyin_w.png'></image>
+							<text>发红包</text>
+						</navigator>
+					</li>
+					<li>
+						<navigator url=''>
+							<image src='../../img/share_w.png'></image>
+							<text>去转发</text>
+						</navigator>
+					</li>
+				</ul>
+			</view>
+		</view>
+		<!--西半部分白色bg  -->
+		<view class='bottom'>
+			<!--红包状态  -->
+			<view class='packetInfo'>
+				共2元，共50个，正在抢
+			</view>
+			<!--抢红包客户列表  -->
+			<view class='getList'>
+					<view class='list'>
+						<!--left  -->
+						<view class='nameBox'>
+							<image src='../../img/user_i.png'></image>
+							<view class='name'>南广轩主</view>
+						</view>
+						<!--right  -->
+						<view class='timeBox'>
+							<view class='money'>0.02元</view>
+							<view class='time'>2017-12-22</view>
+						</view>
+					</view>
+					<view class='list'>
+						<!--left  -->
+						<view class='nameBox'>
+							<image src='../../img/user_i.png'></image>
+							<view class='name'>南广轩主</view>
+						</view>
+						<!--right  -->
+						<view class='timeBox'>
+							<view class='money'>0.02元</view>
+							<view class='time'>2017-12-22</view>
+						</view>
+					</view>
+					<view class='list'>
+						<!--left  -->
+						<view class='nameBox'>
+							<image src='../../img/user_i.png'></image>
+							<view class='name'>南广轩主</view>
+						</view>
+						<!--right  -->
+						<view class='timeBox'>
+							<view class='money'>0.02元</view>
+							<view class='time'>2017-12-22</view>
+						</view>
+					</view>
+					<view class='list'>
+						<!--left  -->
+						<view class='nameBox'>
+							<image src='../../img/user_i.png'></image>
+							<view class='name'>南广轩主</view>
+						</view>
+						<!--right  -->
+						<view class='timeBox'>
+							<view class='money'>0.02元</view>
+							<view class='time'>2017-12-22</view>
+						</view>
+					</view>
+					<view class='list'>
+						<!--left  -->
+						<view class='nameBox'>
+							<image src='../../img/user_i.png'></image>
+							<view class='name'>南广轩主</view>
+						</view>
+						<!--right  -->
+						<view class='timeBox'>
+							<view class='money'>0.02元</view>
+							<view class='time'>2017-12-22</view>
+						</view>
+					</view>
+			</view>
+		</view>
+	</view>
+</view>
+</view>
