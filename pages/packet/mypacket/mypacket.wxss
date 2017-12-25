@@ -1,0 +1,48 @@
+/* pages/packet/mypacket/mypacket.wxss */
+.navbar{
+      flex: none;  
+      display: flex;  
+      background: #fff;  
+      margin-bottom: 10rpx;
+      font-size: 14px;
+    }  
+    .navbar .item{  
+      position: relative;  
+      flex: auto;  
+      text-align: center;  
+      line-height: 90rpx;
+      font-size: 14px;  
+    }  
+    .navbar .item.active{  
+      color: #c11a29;  
+    }  
+    .navbar .item.active:after{  
+      content: "";  
+      display: block;  
+      position: absolute;  
+      bottom: 0;  
+      left: 0;  
+      right: 0;  
+      height: 4rpx;  
+      background: #c11a29;  
+    }  
+
+
+/*头像  */
+.iconBox{height: 200rpx;width: 100%;text-align: center;margin-top: 30rpx;}
+.icon{height: 200rpx;width: 200rpx;margin: 0 auto;border-radius: 103rpx;border: 6rpx solid #fff;}
+.icon image{height: 200rpx;width: 200rpx;}
+/*名字  */
+.myName{text-align: center;margin: 20rpx;font-size: 30rpx;}
+.myName text{color: blue;}
+/* 红包金额和数量 */
+.moneyNumBox{overflow: hidden;margin: 30rpx auto;}
+.moneyNum{float: left;width: 50%;text-align: center;}
+.moneyNum .tit{font-size: 30rpx;color: #999;}
+.num{font-size: 46rpx;margin: 20rpx 0;}
+/*发出红包列表  */
+.list{padding: 30rpx 40rpx;margin: 20rpx 0;background-color: #fff;overflow: hidden;}
+.list navigator{overflow: hidden;}
+.list .tit{font-size: 30rpx;}
+.list .time{font-size: 28rpx;color: #999;}
+.list .right text{font-size: 46rpx;}

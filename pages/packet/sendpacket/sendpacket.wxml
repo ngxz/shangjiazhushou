@@ -1,15 +1,150 @@
 <!--pages/packet/sendpacket/sendpacket.wxml-->
-<text>pages/packet/sendpacket/sendpacket.wxml</text>
+<import src="../../plus/toast/toast.wxml"/>
+<template is="wxToast" data="{{...wxToastConfig}}"></template> 
 <view class='page'>
 	<!-- 主体模块 -->
 	<view class='content'>
 		<!-- 头像 -->
 		<view class='iconBox'>
-			<view class='icon'><image src=''></image></view>
+			<view class='icon'><image src='../../../img/logo.png'></image></view>
 		</view>
 		<!--发红包  -->
-		<view>
-			
+		<view class='typeBox'>
+			<view class='type'>红包类型:</view>
+			<text wx:for="{{type}}" data-idx="{{index}}" class="type {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="typeTab">{{item}}</text>
 		</view>
+		<!--红包类型内容，切换0  -->
+		<view class='typeContent' hidden='{{currentTab !== 0}}'>
+			<!--设置问题  -->
+			<view class='questionBox'>
+				<view class='question'>
+					<text>设置问题</text>
+					<input type='text' bindinput='bindinput' id='question' placeholder='填写问题' value='{{question}}'></input>
+				</view>
+				<view class='answer'>
+					<text>设置答案</text>
+					<input type='text' bindinput='bindinput' id='answer' placeholder='填写答案' value='{{answer}}'></input>
+				</view>
+			</view>
+			<!--tips  -->
+			<view class='tips'>答对答案就能获得随机红包</view>
+			<!--红包赏金  -->
+			<view class='money'>
+				<view class='question'>
+					<text>赏金(元)</text>
+					<input type='number' bindblur='setService' bindinput='bindinput' id='money' placeholder='填写金额' value='{{money}}'></input>
+				</view>
+				<view class='question'>
+					<text>数量(个)</text>
+					<input type='number' bindinput='bindinput' id='num' placeholder='填写数量' value='{{num}}'></input>
+				</view>
+				<view class='question'>
+					<text>上传图片</text>
+					<input type='text' bindtap='selectImg' placeholder='点击上传' value='{{	tempFilePaths}}' hidden='{{uploadImg}}'></input>
+					<view class='previewImgBox' hidden='{{previewImg}}'>
+						<text class='previewImg' bindtap='previewImg'>预览图片</text>
+						<text class='delImg' bindtap='delImg'>删除</text>
+					</view>
+				</view>
+				<textarea bindtap="bindFocus" bindinput='bindinput' id='note' placeholder="备注(选填)" focus="{{focus}}" value='{{note}}' />
+			</view>
+			<!-- 服务费 -->
+			<view class='serviceBox'>另收取 <text class='service'>{{service}}</text> 元服务费，总计支付 <text class='total'>{{total}}</text> 元</view>
+			<!--生成红包按钮  -->
+			<button bindtap='generate'>生成问答红包</button>
+		</view>
+		<!--红包类型内容，切换1普通  -->
+		<view class='typeContent' hidden='{{currentTab !== 1}}'>
+			<!--设置问题  -->
+			<view class='questionBox'>
+				<view class='question'>
+					<text>设置问题</text>
+					<input type='text' bindinput='bindinput' id='question' placeholder='填写问题' value='{{question}}'></input>
+				</view>
+			</view>
+			<!--tips  -->
+			<view class='tips'>在领红包页面停留10秒就能获得随机红包</view>
+			<!--红包赏金  -->
+			<view class='money'>
+				<view class='question'>
+					<text>赏金(元)</text>
+					<input type='number' bindblur='setService' bindinput='bindinput' id='money' placeholder='填写金额' value='{{money}}'></input>
+				</view>
+				<view class='question'>
+					<text>数量(个)</text>
+					<input type='number' bindinput='bindinput' id='num' placeholder='填写数量' value='{{num}}'></input>
+				</view>
+				<view class='question'>
+					<text>上传图片</text>
+					<input type='text' bindtap='selectImg' placeholder='点击上传' value='{{	tempFilePaths}}' hidden='{{uploadImg}}'></input>
+					<view class='previewImgBox' hidden='{{previewImg}}'>
+						<text class='previewImg' bindtap='previewImg'>预览图片</text>
+						<text class='delImg' bindtap='delImg'>删除</text>
+					</view>
+				</view>
+				<textarea bindtap="bindFocus" bindinput='bindinput' id='note' placeholder="备注(选填)" focus="{{focus}}" value='{{note}}' />
+			</view>
+			<!-- 服务费 -->
+			<view class='serviceBox'>另收取 <text class='service'>{{service}}</text> 元服务费，总计支付 <text class='total'>{{total}}</text> 元</view>
+			<!--生成红包按钮  -->
+			<button bindtap='generate'>生成普通红包</button>
+		</view>
+		<!--红包类型内容，切换2语音  -->
+		<view class='typeContent' hidden='{{currentTab !== 2}}'>
+			<!--设置问题  -->
+			<view class='questionBox'>
+				<view class='question'>
+					<text>设置口令</text>
+					<input type='text' bindinput='bindinput' id='question' placeholder='填写口令' value='{{question}}'></input>
+				</view>
+			</view>
+			<!--tips  -->
+			<view class='tips'>说对口令就能获得随机红包</view>
+			<!--红包赏金  -->
+			<view class='money'>
+				<view class='question'>
+					<text>赏金(元)</text>
+					<input type='number' bindblur='setService' bindinput='bindinput' id='money' placeholder='填写金额' value='{{money}}'></input>
+				</view>
+				<view class='question'>
+					<text>数量(个)</text>
+					<input type='number' bindinput='bindinput' id='num' placeholder='填写数量' value='{{num}}'></input>
+				</view>
+				<view class='question'>
+					<text>上传图片</text>
+					<input type='text' bindtap='selectImg' placeholder='点击上传' value='{{	tempFilePaths}}' hidden='{{uploadImg}}'></input>
+					<view class='previewImgBox' hidden='{{previewImg}}'>
+						<text class='previewImg' bindtap='previewImg'>预览图片</text>
+						<text class='delImg' bindtap='delImg'>删除</text>
+					</view>
+				</view>
+				<textarea bindtap="bindFocus" bindinput='bindinput' id='note' placeholder="备注(选填)" focus="{{focus}}" value='{{note}}' />
+			</view>
+			<!-- 服务费 -->
+			<view class='serviceBox'>另收取 <text class='service'>{{service}}</text> 元服务费，总计支付 <text class='total'>{{total}}</text> 元</view>
+			<!--生成红包按钮  -->
+			<button bindtap='generate'>生成语音红包</button>
+		</view>
+	</view>
+</view>
+<!--底部导航  -->
+<view class='footerBar'>
+	<view class='bar'>
+		<navigator url='../../packet/mypacket/mypacket' hover-class="none">
+			<image src='../../../img/corder_g.png'></image>
+			<text>我的记录</text>
+		</navigator>
+	</view>
+	<view class='bar'>
+		<navigator url='../../packet/tixian/tixian' hover-class="none">
+			<image src='../../../img/money_g.png'></image>
+			<text>余额提现</text>
+		</navigator>
+	</view>
+	<view class='bar'>
+		<navigator url='' hover-class="none">
+			<image src='../../../img/quest_g.png'></image>
+			<text>常见问题</text>
+		</navigator>
 	</view>
 </view>

@@ -1,6 +1,8 @@
 {
     "pages": [
-		"pages/packet/sendpacket/sendpacket",
+		
+        "pages/packet/sendpacket/sendpacket",
+		"pages/packet/mypacket/mypacket",
         "pages/packet/tixian/tixian",
         "pages/packet/packet",
         "pages/login/login",

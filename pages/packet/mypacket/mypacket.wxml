@@ -1,0 +1,110 @@
+<!--pages/packet/mypacket/mypacket.wxml-->
+<import src="../plus/toast/toast.wxml"/>
+<template is="wxToast" data="{{...wxToastConfig}}"></template>
+<!--  -->
+<view class='page'>
+	 <!--导航条-->  
+    <view class="navbar">  
+      <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+    </view>
+	<!--内容  -->
+	<!--我发出的  -->
+	<view class='content' hidden='{{currentTab !== 0}}'>
+		<!-- 头像 -->
+		<view class='iconBox'>
+			<view class='icon'><image src='../../../img/logo.png'></image></view>
+		</view>
+		<view class='myName'><text>南广轩主</text> 共发出</view>
+		<!--金额与数量  -->
+		<view class='moneyNumBox'>
+			<view class='moneyNum'>
+				<view class='tit'>金额（元）</view>
+				<view class='num'>1.00</view>
+			</view>
+			<view class='moneyNum'>
+				<view class='tit'>数量（个）</view>
+				<view class='num'>1</view>
+			</view>
+		</view>
+		<!--发红包列表  -->
+		<view class='sendList'>
+			<view class='list'>
+				<navigator url='../../packet/packet' hover-class='none'>
+					<view class='left'>
+						<view class='tit'>我的网址是多少</view>
+						<view class='time'>2017-12-25</view>
+					</view>
+					<view class='right'>
+						<text>1.00</text> 元
+					</view>
+				</navigator>
+			</view>
+			<view class='list'>
+				<navigator url='../../packet/packet' hover-class='none'>
+					<view class='left'>
+						<view class='tit'>我的网址是多少</view>
+						<view class='time'>2017-12-25</view>
+					</view>
+					<view class='right'>
+						<text>1.00</text> 元
+					</view>
+				</navigator>
+			</view>
+			<view class='list'>
+				<navigator url='../../packet/packet' hover-class='none'>
+					<view class='left'>
+						<view class='tit'>我的网址是多少</view>
+						<view class='time'>2017-12-25</view>
+					</view>
+					<view class='right'>
+						<text>1.00</text> 元
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+	<!--我收到的  -->
+	<view class='content' hidden='{{currentTab !== 1}}'>
+		<!-- 头像 -->
+		<view class='iconBox'>
+			<view class='icon'><image src='../../../img/logo.png'></image></view>
+		</view>
+		<view class='myName'><text>南广轩主</text> 共收到</view>
+		<!--金额与数量  -->
+		<view class='moneyNumBox'>
+			<view class='moneyNum'>
+				<view class='tit'>金额（元）</view>
+				<view class='num'>1.00</view>
+			</view>
+			<view class='moneyNum'>
+				<view class='tit'>数量（个）</view>
+				<view class='num'>2</view>
+			</view>
+		</view>
+		<!--发红包列表  -->
+		<view class='sendList'>
+			<view class='list'>
+				<navigator url='../../packet/packet' hover-class='none'>
+					<view class='left'>
+						<view class='tit'>我的网址是多少</view>
+						<view class='time'>2017-12-25</view>
+					</view>
+					<view class='right'>
+						<text>1.00</text> 元
+					</view>
+				</navigator>
+			</view>
+			<view class='list'>
+				<navigator url='../../packet/packet' hover-class='none'>
+					<view class='left'>
+						<view class='tit'>我的网址是多少</view>
+						<view class='time'>2017-12-25</view>
+					</view>
+					<view class='right'>
+						<text>1.00</text> 元
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+</view>
