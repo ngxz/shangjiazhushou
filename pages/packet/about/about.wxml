@@ -1,0 +1,20 @@
+<!--pages/packet/about/about.wxml-->
+<view class=''>
+	<view class='list' bindtap='modalOpen'>
+		<text>联系我们</text>
+		<image src='../../../img/row_r.png'></image>
+	</view>
+</view>
+<!--弹出modal  -->
+<modal class="modal" hidden="{{modalStatus}}" no-cancel bindconfirm="modalOk" >
+	<view class='tit'>联系我们</view>
+    <view class="msgBox">
+      	<view class="tip">
+		  根据您当前所在位置，向您推荐以下服务站点，该服务点服务范围周边3公里。		
+		</view>  
+		<view class="msg">
+			<view class='mobile'>电话：13836999898</view>
+			<view class='address'>地址：重庆市渝中区大坪街道石油路</view>
+		</view>  
+	</view>  
+</modal> 

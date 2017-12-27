@@ -30,7 +30,7 @@
 
 /*头像  */
 .iconBox{height: 200rpx;width: 100%;text-align: center;margin-top: 30rpx;}
-.icon{height: 200rpx;width: 200rpx;margin: 0 auto;border-radius: 103rpx;border: 6rpx solid #fff;}
+.icon{height: 200rpx;width: 200rpx;margin: 0 auto;border-radius: 100rpx;border: 1rpx solid #ccc;overflow: hidden;}
 .icon image{height: 200rpx;width: 200rpx;}
 /*名字  */
 .myName{text-align: center;margin: 20rpx;font-size: 30rpx;}

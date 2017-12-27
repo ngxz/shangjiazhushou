@@ -1,5 +1,5 @@
 <!--pages/packet/mypacket/mypacket.wxml-->
-<import src="../plus/toast/toast.wxml"/>
+<import src="../../plus/toast/toast.wxml"/>
 <template is="wxToast" data="{{...wxToastConfig}}"></template>
 <!--  -->
 <view class='page'>
@@ -12,7 +12,7 @@
 	<view class='content' hidden='{{currentTab !== 0}}'>
 		<!-- 头像 -->
 		<view class='iconBox'>
-			<view class='icon'><image src='../../../img/logo.png'></image></view>
+			<view class='icon'><image src='../../../img/icon.jpg'></image></view>
 		</view>
 		<view class='myName'><text>南广轩主</text> 共发出</view>
 		<!--金额与数量  -->
@@ -67,7 +67,7 @@
 	<view class='content' hidden='{{currentTab !== 1}}'>
 		<!-- 头像 -->
 		<view class='iconBox'>
-			<view class='icon'><image src='../../../img/logo.png'></image></view>
+			<view class='icon'><image src='../../../img/icon.jpg'></image></view>
 		</view>
 		<view class='myName'><text>南广轩主</text> 共收到</view>
 		<!--金额与数量  -->

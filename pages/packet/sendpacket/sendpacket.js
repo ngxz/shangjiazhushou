@@ -23,6 +23,7 @@ Page({
 	uploadImg:false,//默认显示点击上传
 	previewImg:true,//默认不显示预览图片
 	imgs:[],
+	animationData:{},//动画
   },
 
   /**
@@ -35,7 +36,16 @@ Page({
    * 点击类型切换内容
    */
   typeTab:function(e){
+	  //动画参数
+	  var animation = wx.createAnimation({
+		  duration: 200,
+		  timingFunction: 'linear',
+	  })
+	  this.animation = animation
+	  animation.rotateY(180).step()
+		animation.rotateY(0).step()
 	this.setData({
+		animationData: animation.export(),//设置动画
 		status:e.currentTarget.dataset.idx,
 		currentTab:e.currentTarget.dataset.idx,
 	})
@@ -106,10 +116,11 @@ Page({
 		})
   },
   /**
-   * 输入金额设置无付费
+   * 输入金额设置服务费
    */
   setService:function(e){
 	var money = e.detail.value;
+	//没有输入
 	if(!money){
 		this.setData({
 			service:0,
@@ -117,6 +128,14 @@ Page({
 		})
 		return;
 	}
+	//输入不合法
+
+	// if(){
+	// 	this.setData({
+	// 		money:money,
+	// 	})
+	// }
+	console.log(money);
 	var service = this.data.service;
 	var total = this.data.total;
 	// 运算

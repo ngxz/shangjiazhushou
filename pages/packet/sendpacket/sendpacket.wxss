@@ -2,7 +2,7 @@
 /*头像  */
 .iconBox{height: 200rpx;width: 100%;text-align: center;}
 .iconBox{position: absolute;top: -100rpx;}
-.icon{height: 200rpx;width: 200rpx;margin: 0 auto;border-radius: 103rpx;background-color: #999;border: 6rpx solid #fff;}
+.icon{height: 200rpx;width: 200rpx;margin: 0 auto;border-radius: 103rpx;background-color: #999;border: 6rpx solid #fff;overflow: hidden;}
 .icon image{height: 200rpx;width: 200rpx;}
 /*主体内容白色bg  */
 .content{background-color: #fff;margin: 140rpx 32rpx;position: relative;}

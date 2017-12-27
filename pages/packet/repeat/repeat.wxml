@@ -1,0 +1,39 @@
+<!--pages/packet/repeat/repeat.wxml-->
+<view>
+	<!--上班部分top  -->
+	<view class='top'>
+		<!-- 头像 -->
+		<view class='iconBox'>
+			<view class='icon'><image src='../../../img/logo.png'></image></view>
+		</view>
+		<!-- 发了红包 -->
+		<view class='type'>发了一个口令红包</view>
+		<!--红包问题  -->
+		<view class='quest'>我的网站地址是多少</view>
+	</view>
+	<!--红包bg图  -->
+	<view class='bgBox'>
+		<image class='bg' src='../../../img/bg_02.png'></image>
+		<text bindtap='modalOpen'></text>
+	</view>
+	<!--分享和返回  -->
+	<view class='shareBox'>
+		<view><button type='primary' open-type="share">转发给朋友</button></view>
+		<view><button type='default'>生成朋友圈分享图</button></view>
+		<view class='back'>
+			<image src='../../../img/row_l.png'></image>
+			<navigator open-type='navigateBack' delta='1' hover-class="none">
+				返回
+			</navigator>
+		</view>
+	</view>
+</view>
+<!--弹出modal  -->
+<modal class="modal" hidden="{{modalStatus}}" no-cancel bindconfirm="modalOk" confirm-text="拜拜">
+	<view class='tit'>我是一个调皮的弹窗</view>
+    <view class="msgBox">
+      	<view class="tip">
+		  就知道你会点我~~~		
+		</view>   
+	</view>  
+</modal> 

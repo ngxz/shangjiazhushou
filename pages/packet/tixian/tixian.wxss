@@ -7,8 +7,8 @@
 .yue text{font-size: 50rpx;margin-left: 80rpx;margin-right: 30rpx;}
 /*提现输入框  */
 .tixian{padding: 20rpx;position: relative;}
-.tixian input{height: 120rpx;border-bottom: 1px solid #000;padding-left: 40rpx;font-size: 40rpx;font-weight: bold;}
-.tixian text{position:absolute;top: 100rpx;left: 20rpx;font-size:40rpx;font-weight: bold;}
+.tixian input{height: 100rpx;border-bottom: 1px solid #000;padding-left: 40rpx;font-size: 40rpx;font-weight: bold;}
+.tixian text{position:absolute;top: 90rpx;left: 20rpx;font-size:40rpx;font-weight: bold;}
 /*备注文字  */
 .tips{font-size: 30rpx;color: #999;}
 .tips text{color: blue;}

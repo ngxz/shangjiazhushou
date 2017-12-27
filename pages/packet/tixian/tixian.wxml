@@ -9,7 +9,7 @@
 		<!--提现金额  -->
 		<view class='tixian'>
 			<view class='tit'>提现金额</view>
-			<input type='number' value='{{money}}' placeholder='0.00'></input>
+			<input type='number' bindinput='bindinput' value='{{money}}' placeholder='0.00'></input>
 			<text>￥</text>
 		</view>
 		<!--备注  -->
@@ -20,7 +20,7 @@
 		</view>
 		<!--提现按钮  -->
 		<view class='tixianBtn'>
-			<button type='primary'>提现</button>
+			<button type='primary' bindtap='tixianBtn'>提现</button>
 			<view class='tip'>1-5个工作日到账</view>
 		</view>
 	</view>

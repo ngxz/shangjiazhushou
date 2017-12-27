@@ -1,0 +1,9 @@
+/* pages/packet/about/about.wxss */
+/*问题页的列表  */
+.list{padding: 30rpx 0 30rpx 30rpx;background-color: #fff;display: flex;margin: 20rpx;position: relative;}
+.list text{font-size: 32rpx;}
+.list image{height: 34rpx;width: 34rpx;position: absolute;right: 28rpx;}
+/* 模态框 */
+.tit{font-size: 32rpx;text-align: center;color: #000;}
+.msgBox{margin-top: 60rpx;font-size: 30rpx;}
+.msg{margin: 30rpx 0;}

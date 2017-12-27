@@ -3,10 +3,10 @@
 <template is="wxToast" data="{{...wxToastConfig}}"></template> 
 <view class='page'>
 	<!-- 主体模块 -->
-	<view class='content'>
+	<view class='content' animation="{{animationData}}">
 		<!-- 头像 -->
 		<view class='iconBox'>
-			<view class='icon'><image src='../../../img/logo.png'></image></view>
+			<view class='icon'><image src='../../../img/icon.jpg'></image></view>
 		</view>
 		<!--发红包  -->
 		<view class='typeBox'>
@@ -142,7 +142,7 @@
 		</navigator>
 	</view>
 	<view class='bar'>
-		<navigator url='' hover-class="none">
+		<navigator url='../../packet/about/about' hover-class="none">
 			<image src='../../../img/quest_g.png'></image>
 			<text>常见问题</text>
 		</navigator>

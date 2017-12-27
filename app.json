@@ -1,10 +1,13 @@
 {
     "pages": [
+		"pages/packet/packet",
+		"pages/packet/sendpacket/sendpacket",
 		
-        "pages/packet/sendpacket/sendpacket",
-		"pages/packet/mypacket/mypacket",
+        
+		"pages/packet/repeat/repeat",
+        "pages/packet/mypacket/mypacket",
         "pages/packet/tixian/tixian",
-        "pages/packet/packet",
+        "pages/packet/about/about",
         "pages/login/login",
         "pages/home/home",
         "pages/logs/logs",

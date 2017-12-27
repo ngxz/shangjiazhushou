@@ -1,11 +1,11 @@
 /* pages/packet/packet.wxss */
 page{background-color: #f1f1f1;}
 /*上部分bg  */
-.top{background-color: #da5943;padding: 0 20rpx;}
+.top{background-color: #da5943;padding: 0 40rpx;}
 /*icon  */
-.iconBox{height: 300rpx;width: 100%;text-align: center;padding-top: 80rpx;}
-.icon{height: 260rpx;width: 260rpx;margin: 0 auto;border-radius: 130rpx;background-color: #fff;}
-.icon image{height: 260rpx;width: 260rpx;}
+.iconBox{height: 260rpx;width: 100%;text-align: center;padding-top: 50rpx;}
+.icon{height: 200rpx;width: 200rpx;margin: 0 auto;border-radius: 100rpx;background-color: #fff;overflow: hidden;}
+.icon image{height: 200rpx;width: 200rpx;}
 .iconName{margin-top: 10rpx;color: #fff;font-size: 32rpx;}
 /*所提问题  */
 .quest{margin-top: 30rpx;}
@@ -17,6 +17,9 @@ page{background-color: #f1f1f1;}
 /*输入按钮  */
 .inputBtn {margin: 30rpx auto;}
 .inputBtn button{height: 90rpx;width:70%;background-color: #4baf4f;color: #fff;text-align: center;line-height: 90rpx;font-size: 36rpx;border-radius:55rpx;margin: 0 auto;}
+/*显示已经抢到的金额  */
+.getMoney{font-size: 30rpx;color: #f6e6b2;text-align: center;}
+.getMoney text{font-size: 60rpx;}
 /*分享提现  */
 .share{overflow: hidden;}
 .share ul{display: flex;width: 80%;margin: 0 auto;}
@@ -36,3 +39,10 @@ page{background-color: #f1f1f1;}
 .timeBox{float: right;}
 .money{text-align: right;font-size: 28rpx}
 .time{color: #999;margin-top: 20rpx;font-size: 24rpx}
+
+/* 模态框 */
+.tit{font-size: 32rpx;text-align: center;color: #000;}
+.msgBox{margin-top: 40rpx;font-size: 32rpx;}
+.msg{margin: 30rpx 0;}
+/*模态框输入  */
+.msgBox input{margin-top: 40rpx;border: 1px solid #ccc;border-radius: 10rpx;height:70rpx;}

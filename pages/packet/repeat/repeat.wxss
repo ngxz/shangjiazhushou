@@ -1,0 +1,28 @@
+/* pages/packet/repeat/repeat.wxss */
+page{background-color: #cc533e;}
+.top{background-color: #da5943;}
+/*头像  */
+.iconBox{height: 140rpx;width: 100%;text-align: center;padding-top: 30rpx;}
+.icon{height: 140rpx;width: 140rpx;margin: 0 auto;border-radius: 30rpx;background-color: #fff;}
+.icon image{height: 140rpx;width: 140rpx;}
+/* 红包类型 */
+.type{text-align: center;margin-top: 20rpx;color: #f6e6b2;font-size: 32rpx;}
+/*红包问题  */
+.quest{margin-top: 30rpx;text-align: center;color: #f6e6b2;font-size: 42rpx;}
+/*红包图片bg  */
+.bg{width: 100%;height: 260rpx;}
+.bgBox{position: relative;}
+.bgBox text{position: absolute;top: 50%;left: 50%;margin-top: -80rpx;margin-left: -80rpx;display: block;height: 180rpx;width: 180rpx;}
+/*分享容器  */
+.shareBox{margin: 40rpx;padding: 40rpx;background-color: #fff;border-radius: 10rpx}
+/* 分享按钮 */
+.shareBox button{height: 80rpx;line-height: 80rpx;font-size: 32rpx;margin: 24rpx 0;}
+/*返回  */
+.back{text-align: center;}
+.back navigator{display: inline;font-size: 30rpx;color: #999;margin-left: 20rpx;}
+.back image{width: 30rpx;height: 30rpx;}
+
+/* 模态框 */
+.tit{font-size: 32rpx;text-align: center;color: #000;}
+.msgBox{margin-top: 60rpx;font-size: 30rpx;}
+.msg{margin: 30rpx 0;}

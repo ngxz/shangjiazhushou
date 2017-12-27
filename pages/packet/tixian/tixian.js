@@ -16,6 +16,15 @@ Page({
   
   },
   /**
+   * 输入提现金额
+   */
+  bindinput:function(e){
+	var money = e.detail.value;
+	this.setData({
+		money:money,
+	})
+  },
+  /**
    * 用户点击全部提现
    * 余额全部填入输入框
    */
@@ -25,9 +34,10 @@ Page({
 	})
   },
   /**
-   * 点击提现按钮后提现
+   * 点击提现按钮
    */
-  tixian:function(){
-	//请求
+  tixianBtn:function(){
+	//提现数据
+	console.log(this.data.money);
   }
 })
