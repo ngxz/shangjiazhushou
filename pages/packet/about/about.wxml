@@ -10,7 +10,7 @@
 	<view class='tit'>联系我们</view>
     <view class="msgBox">
       	<view class="tip">
-		  根据您当前所在位置，向您推荐以下服务站点，该服务点服务范围周边3公里。		
+		  根据您当前所在位置，向您推荐以下服务站点，该服务点服务范围周边5公里。		
 		</view>  
 		<view class="msg">
 			<view class='mobile'>电话：13836999898</view>
